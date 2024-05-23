@@ -1,0 +1,171 @@
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
+.animate {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-container {
+  font-family: "OSTRICH-REGULAR";
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 260px;
+  margin-left: 150px;
+  position: relative;
+  @media (max-width: 768px) {
+    margin-left: 25px;
+    margin-bottom: 160px;
+  }
+}
+
+.h {
+  font-family: "OSTRICH-REGULAR";
+  font-size: 100px;
+  margin-top: 250px;
+}
+
+.skills-tab {
+  display: flex;
+  cursor: pointer;
+  font-family: "OSTRICH-REGULAR";
+  font-size: 22px;
+
+  &:hover {
+    color: blue;
+  }
+}
+.skills-tab-container {
+  justify-content: center;
+  display: flex;
+  gap: 500px;
+  @media (max-width: 768px) {
+    gap: 200px;
+  }
+}
+
+.skills-tab.active {
+  border-bottom: 1px solid #000;
+}
+.skills-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-bar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.skill-progress {
+  height: 10px;
+  border-radius: 5px;
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+}
+
+.skill-progress.html {
+  width: 80%;
+  background-color: #6a994e;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.css {
+  width: 70%;
+  background-color: #4c98cf;
+  animation-name: progress;
+  animation-duration: 1.5s;
+}
+
+.skill-progress.javascript {
+  width: 75%;
+  background-color: #f0d91d;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.react {
+  width: 80%;
+  background-color: #61dbfb;
+  animation-name: progress;
+  animation-duration: 2.5s;
+}
+
+.skill-progress.redux {
+  width: 50%;
+  background-color: #764abc;
+  animation-name: progress;
+  animation-duration: 1.5s;
+}
+
+.skill-progress.bootstrap {
+  width: 80%;
+  background-color: #553c7b;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.communication {
+  width: 50%;
+  background-color: #00ffff;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.teamwork {
+  width: 60%;
+  background-color: #ff00ff;
+  animation-name: progress;
+  animation-duration: 1.5s;
+}
+
+.skill-progress.problem-solving {
+  width: 80%;
+  background-color: #ffff00;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.adaptability {
+  width: 75%;
+  background-color: #ff0000;
+  animation-name: progress;
+  animation-duration: 2.5s;
+}
+
+.skill-progress.creativity {
+  width: 85%;
+  background-color: #00ff00;
+  animation-name: progress;
+  animation-duration: 1.5s;
+}
+
+.skill-progress.organization {
+  width: 70%;
+  background-color: #0000ff;
+  animation-name: progress;
+  animation-duration: 2s;
+}

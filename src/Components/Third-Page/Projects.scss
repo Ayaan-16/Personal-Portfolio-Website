@@ -1,0 +1,135 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "OSTRICH-REGULAR";
+  color: #333;
+  background-color: transparent;
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  margin: 0;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+  position: relative;
+  right: 25px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+.card-body:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 70px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: black;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  transition: background-color 0.3s ease-in-out;
+  color: #fff;
+}
+
+@mixin media-query($breakpoint) {
+  @if $breakpoint == "xs" {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  } @else if $breakpoint == "sm" {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      @content;
+    }
+  } @else if $breakpoint == "md" {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      @content;
+    }
+  } @else if $breakpoint == "lg" {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+}
+
+.col-md-6 {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 411px;
+
+  @include media-query("xs") {
+    max-width: 100%;
+    position: relative;
+  }
+
+  @include media-query("sm") {
+    max-width: 100%;
+    position: relative;
+  }
+
+  @include media-query("md") {
+    max-width: 44.84%;
+    position: relative;
+  }
+
+  @include media-query("lg") {
+    position: relative;
+    right: 35px;
+    max-width: 45.97%;
+  }
+  @include media-query("lg") {
+    position: relative;
+    right: 20px;
+    max-width: 33.33%;
+  }
+}

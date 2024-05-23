@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "OSTRICH-REGULAR";
+  src: url("./ostrich-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.all {
+  height: 1200px;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 0, 0),
+    rgb(255, 0, 255),
+    rgb(0, 0, 255),
+    rgb(255, 165, 0),
+    rgb(255, 69, 0),
+    rgb(255, 0, 0)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.name,
+.center-text,
+.second-center-text {
+  z-index: 1;
+  font-family: "Arial", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.name {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  position: fixed;
+  top: 25px;
+  left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.name:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.navbar {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.navbar a {
+  font-family: "OSTRICH-REGULAR", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.navbar a:not(:last-child) {
+  border-right: 1px solid black;
+}
+.navbar a:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  .name {
+    top: 20px;
+    left: 10px;
+    font-size: 20px;
+  }
+  .navbar {
+    top: 18px;
+    right: 0px;
+  }
+  .navbar a {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+}
+.center-text {
+  position: relative;
+  font-family: "OSTRICH-REGULAR";
+  text-align: center;
+  margin: -50px 20px 0;
+  font-size: 120px;
+  top: 300px;
+
+  @media (max-width: 768px) {
+    font-size: 99px;
+  }
+}
+
+.second-center-text {
+  font-family: "OSTRICH-REGULAR";
+  font-weight: 300;
+  text-align: center;
+  margin: -10px;
+  font-size: 25px;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+    margin: -5px 5px;
+  }
+}

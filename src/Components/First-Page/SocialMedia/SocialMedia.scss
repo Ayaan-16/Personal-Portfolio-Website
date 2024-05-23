@@ -1,0 +1,23 @@
+.image-list {
+  z-index: 1;
+  background: none;
+  position: relative;
+  top: -770px;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  transform: none;
+}
+
+.image-list img {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.image-list img:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}

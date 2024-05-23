@@ -1,0 +1,52 @@
+@import "./Components/First-Page/Main/Main.scss";
+@import "./Components/First-Page/AboutButton/AboutButton.scss";
+@import "./Components/First-Page/ThemeSwitcher/ThemeSwitcher.scss";
+@import "./Components/First-Page/SocialMedia/SocialMedia.scss";
+@import "./Components/Second-Page/AboutMe/AboutMe.scss";
+@import "./Components/Third-Page/Projects.scss";
+@import "./Components/Fourth-Page/Skills.scss";
+@import "./Components/Fifth-Page/ContactMe.scss";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.dark {
+  background-color: #0d1117;
+  color: #ffffff !important;
+}
+.dark .navbar a {
+  color: #ffffff;
+}
+.dark .navbar a:not(:last-child) {
+  border-right: 1px solid white;
+}
+.dark .name {
+  color: #ffffff;
+}
+.dark .ResumeButton {
+  border-color: white;
+  color: white;
+}
+.dark .ResumeButton:hover {
+  background-color: white;
+  color: black;
+}
+.dark .container1 {
+  color: white;
+}
+.dark .heading {
+  color: white;
+}
+.dark .btn {
+  color: white;
+}
+.dark .text {
+  color: white;
+}
+.dark .skills-tab.active {
+  border-bottom: 1px solid white;
+}

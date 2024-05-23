@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "OSTRICH-REGULAR";
+  src: url("./ostrich-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  font-family: "OSTRICH-REGULAR";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image1 {
+  order: -1;
+  width: 250px;
+  height: auto;
+}
+
+.image2 {
+  flex-direction: column;
+  order: -1;
+  width: 500px;
+  height: auto;
+}
+
+.image3 {
+  flex-direction: column;
+  order: 1;
+  width: 500px;
+  height: auto;
+}
+
+.te {
+  margin-top: 50px;
+  font-size: 70px;
+}
+
+.t {
+  text-align: center;
+  margin-top: -25px;
+  font-size: 30px;
+  width: 700px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .t {
+    width: 417px;
+  }
+}
+@media (max-width: 1140px) {
+  .image2 {
+    display: none;
+  }
+}
+@media (max-width: 1740px) {
+  .image3 {
+    display: none;
+  }
+}
+
+.ResumeButton {
+  font-size: medium;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 110px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.ResumeButton:hover {
+  background-color: #212529;
+  color: white;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
