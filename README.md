@@ -13,7 +13,7 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Built With
 
-My personal portfolio which features my resume and technical skills.<br/>
+Portfolio Website with Beautiful Design made by Me with Dark Theme Option as well and Great Animations and all Devices Resolution Supported as well using Bootstrap Grid System.<br> Would Highly Recommend Viewing the Website yourself instead of Screenshots!!!<br/>
 
 This project was built using these technologies.
 
