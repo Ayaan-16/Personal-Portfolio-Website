@@ -2,10 +2,10 @@
   Portfolio Website<br/>
 </h2>
 <br/>
-<img src="./src/a.png">
-<img src="./src/a1.png">
-<img src="./src/a2.png">
-<img src="./src/a3.png">
+<img src="./a.png">
+<img src="./a1.png">
+<img src="./a2.png">
+<img src="./a3.png">
 
 ## TL;DR
 
