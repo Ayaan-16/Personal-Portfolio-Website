@@ -24,6 +24,7 @@ This project was built using these technologies.
 - VsCode
 
 ## Features
+  👾 Optimized for all Devices
 
 **📖 Beautiful Clean Design**
 
