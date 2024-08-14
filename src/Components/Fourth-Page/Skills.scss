@@ -128,6 +128,35 @@
   animation-duration: 2s;
 }
 
+.skill-progress.Nodejs {
+  width: 50%;
+  background-color: #ff5733;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.Expressjs {
+  width: 50%;
+  background-color: #33c1ff;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.MySQL {
+  width: 40%;
+  background-color: #ff33d1;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+.skill-progress.MongoDB {
+  width: 70%;
+  background-color: #33ff57;
+  animation-name: progress;
+  animation-duration: 2s;
+}
+
+
 .skill-progress.communication {
   width: 50%;
   background-color: #00ffff;
