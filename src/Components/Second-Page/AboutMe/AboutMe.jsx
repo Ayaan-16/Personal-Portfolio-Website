@@ -22,7 +22,7 @@ function AboutMe() {
           <p className="t">
             My name is Ayaan Noman.
             <br />
-            I'm a Coding Lover and I have been coding for 3-4 years.
+            I'm a Coding Lover and I have been coding for 4+ years.
             <br />
             I am 16 years old.
             <br />
