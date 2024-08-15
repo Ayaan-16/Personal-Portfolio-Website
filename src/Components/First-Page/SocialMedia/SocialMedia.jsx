@@ -7,6 +7,8 @@ import whatsappWhite from "../Images/whatsapp-white.png";
 import whatsappBlack from "../Images/whatsapp-black.png";
 import instagramWhite from "../Images/instagram-white.png";
 import instagramBlack from "../Images/instagram-black.png";
+import linkedinWhite from "../Images/linkedin-white.png";
+import linkedinBlack from "../Images/linkedin-black.png";
 import "./SocialMedia.scss";
 
 const SocialMedia = () => {
@@ -14,6 +16,7 @@ const SocialMedia = () => {
   const [isFacebookHovered, setIsFacebookHovered] = useState(false);
   const [isWhatsappHovered, setIsWhatsappHovered] = useState(false);
   const [isInstagramHovered, setIsInstagramHovered] = useState(false);
+  const [isLinkedinHovered, setIsLinkedinHovered] = useState(false); // LinkedIn hover state
 
   const handleImageClick = (link) => {
     window.open(link, "_blank");
@@ -66,6 +69,18 @@ const SocialMedia = () => {
             handleImageClick(
               "https://www.instagram.com/ayaan_ahmed13?igsh=MXNsdXZmZzMwaTU4cA=="
             )
+          }
+        />
+      </div>
+      <div>
+        <img
+          src={isLinkedinHovered ? linkedinBlack : linkedinWhite}
+          alt="LinkedIn"
+          className="linkedin-image"
+          onMouseEnter={() => setIsLinkedinHovered(true)}
+          onMouseLeave={() => setIsLinkedinHovered(false)}
+          onClick={() =>
+            handleImageClick("https://www.linkedin.com/in/your-linkedin-id")
           }
         />
       </div>
