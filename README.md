@@ -11,7 +11,7 @@
 
 You can fork this repo to modify and make changes of your own. Please give me proper credit. Thanks!
 
-## This Project was Built in less than 1 Week!
+## This Project was Built in 1 Week!
 
 ## Built With
 
